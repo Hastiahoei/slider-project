@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image-Slider</title>
+    <script src="https://kit.fontawesome.com/b86bf98be3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    
+	<header class="slider">
+		<div class="slider-inner">
+			<div class="slide current">
+				<img src="images/ice.jpg" alt="1">
+				<h3>Image-1</h3>
+			</div>
+			<div class="slide">
+				<img src="images/north.jpg" alt="2">
+				<h3>Image-2</h3>
+			</div>
+			<div class="slide">
+				<img src="images/ic.jpg" alt="3">
+				<h3>Image-3</h3>
+			</div>
+			<div class="slide">
+				<img src="images/ox.jpg" alt="4">
+				<h3>Image-4</h3>
+			</div>
+			<div class="slide">
+				<img src="images/waves.webp" alt="5">
+				<h3>Image-5</h3>
+			</div>
+			<div class="slide">
+				<img src="images/young.jpg" alt="6">
+				<h3>Image-6</h3>
+			</div>
+		</div>
+		<div>
+          
+            <h1 id="right"><i class="fa-solid fa-angles-right"></i></h1>
+       		 <h1 id="left"><i class="fa-solid fa-angles-left"></i></h1>
+		</div>
+         
+
+    </header>
+       <div class="btns">
+            <button id="stopAuto">Stop</button>
+        	<button id="startAuto">Start </button>
+        </div>
+     
+
+        
+     <main class="m1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vero officia praesentium assumenda modi exercitationem, autem soluta aliquam tempore? Placeat sint laborum, obcaecati voluptatibus qui dolorem quaerat iste hic est eveniet officiis repellat cum modi porro nemo? Recusandae, odit excepturi. Quisquam, harum placeat. Expedita deserunt esse ex corporis dolore similique numquam aspernatur officia natus, quo nostrum? Id sequi enim, esse doloremque perferendis beatae voluptate neque aperiam autem quam nihil eius, voluptas pariatur repellat explicabo deleniti, maxime voluptates molestiae quibusdam repudiandae. Dignissimos quia, optio similique quam, dolorum, eligendi est omnis nemo inventore tenetur rem. Modi, quo magni, maxime sed consequuntur laborum molestias doloruminventore fuga tenetur, nisi quam, similique sint natus ducimus est cupiditate reprehenderit! Iusto autem atque neque quae, itaque necessitatibus ratione quibusdam, adipisci sit quis doloribus obcaecati aliquid, animi vel explicabo quasi hic quod rem dolorem incidunt. Magni accusantium in beatae? Nostrum error delectus nam illum architecto natus accusamus. Vitae, perspiciatis error laborum similique consectetur non perferendis at facere, beatae assumenda facilis cumque explicabo aperiam! Dolor magni nihil earum voluptatum ut obcaecati asperiores explicabo deleniti fuga consequatur itaque quo labore delectus nostrum expedita saepe numquam nisi laboriosam, eos praesentium! Illo quidem pariatur sapiente temporibus dolor dolorem aliquid ipsam nulla suscipit aut asperiores omnis, enim assumenda facere architecto obcaecati, placeat sit explicabo id? Eius, necessitatibus! Veritatis eveniet, maiores iste deleniti impedit 
+        beatae.consequuntur laborum molestias doloruminventore fuga tenetur, nisi quam, similique sint natus ducimus est cupiditate reprehenderit! Iusto autem atque neque quae, itaque necessitatibus ratione quibusdam, adipisci sit quis doloribus obcaecati aliquid, animi vel explicabo quasi hic quod rem dolorem incidunt. Magni accusantium in beatae? Nostrum error delectus nam illum architecto natus accusamus. Vitae, perspiciatis error laborum similique consectetur non perferendis at facere, beatae assumenda facilis cumque explicabo aperiam! Dolor magni nihil earum voluptatum ut obcaecati asperiores explicabo deleniti fuga consequatur itaque quo labore delectus nostrum expedita saepe numquam nisi laboriosam, eos praesentium! Illo quidem pariatur sapiente temporibus dolor dolorem aliquid ipsam nulla suscipit aut asperiores omnis, enim assumenda facere architecto obcaecati, placeat sit explicabo id? Eius, necessitatibus! Veritatis eveniet, maiores iste deleniti impedit 
+        beataebeatae.consequuntur laborum molestias doloruminventore fuga tenetur, nisi quam, similique sint natus ducimus est cupiditate reprehenderit! Iusto autem atque neque quae, itaque necessitatibus ratione quibusdam, adipisci sit quis doloribus obcaecati aliquid, animi vel explicabo quasi hic quod rem dolorem incidunt. Magni accusantium in beatae? Nostrum error delectus nam illum architecto natus accusamus. Vitae, perspiciatis error laborum similique consectetur non perferendis at facere, beatae assumenda facilis cumque explicabo aperiam! Dolor magni nihil earum voluptatum ut obcaecati asperiores explicabo deleniti fuga consequatur itaque quo labore delectus nostrum expedita saepe numquam nisi laboriosam, eos praesentium! Illo quidem pariatur sapiente temporibus dolor dolorem aliquid ipsam nulla suscipit aut asperiores omnis, enim assumenda facere architecto obcaecati, placeat sit explicabo id? Eius, necessitatibus! Veritatis eveniet, maiores iste deleniti impedit</p>
+</main>
+
+<div id="back-top">
+    <a href="#">top</a>
+</div>
+
+<footer>
+    <p><a href="datenschutz.html">Datenschutz</a> | <a href="impressum.html">Impressum</a></p>
+</footer>
+
+
+<script>
+
+         $(document).ready(function(){
+    //button ein-/ausblenden
+        $(window).scroll(function(){
+    if($(window).ScrollTop() > 200){
+                $("#back-top").fadeIn("slow");
+
+            }
+
+     else {
+
+                $("back-top").fadeout("fast");
+            }
+
+        });
+
+    // nach oben---//
+ $("#back-top a").click(function(){
+    $("html,body").animate({scrollTop:0},500);
+    return false;
+
+});
+
+    });
+</script>
+  
+	<script src="slider.js"></script>	
+</body>
+</html>
