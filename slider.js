@@ -45,7 +45,17 @@ const prevSlide = () => {
 	 setTimeout(() => current.classList.remove('current'));
 }
 
-const stopButton = document.getElementById('stopAuto')
+
+if (auto ) {
+	initSlide = setInterval(nextSlide, interval);
+}
+
+const startButton  = document.querySelector("#startAuto")
+startButton.addEventListener("click" ,()=> {
+	initSlide=setInterval(nextSlide , 2000);
+})
+
+const stopButton = document.querySelector("#stopAuto")
 stopButton.addEventListener('click',()=>{
 	clearInterval(initSlide);
 })
