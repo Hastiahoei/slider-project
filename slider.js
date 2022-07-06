@@ -42,31 +42,12 @@ const prevSlide = () => {
 		slides[slides.length - 1].classList.add('current');
 	}
 
-	setTimeout(() => current.classList.remove('current'));
+	 setTimeout(() => current.classList.remove('current'));
 }
 
+const stopButton = document.getElementById('stopAuto')
+stopButton.addEventListener('click',()=>{
+	clearInterval(initSlide);
+})
 
-
-
-
-/*document.getElementById("stopAuto").addEventListener("click", ()=>{
-	clearInterval(interval);
-});*/
-
-const stopAuto =document.getElementById("stopAuto")
-
-stopAuto.addEventListener("click" , function () {
-	auto =!auto
-	console.log(auto);
-}
-)
-
-
-if (auto ) {
-	initSlide = setInterval(nextSlide, interval);
-}
-
-else {
-	clearInterval(initSlide)
-}
 
