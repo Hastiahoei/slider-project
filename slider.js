@@ -55,6 +55,7 @@ if (auto ) {
 
 const startButton  = document.querySelector("#startAuto")
 startButton.addEventListener("click" ,()=> {
+	clearInterval(initSlide);
 	initSlide=setInterval(nextSlide , 2000);
 })
 
