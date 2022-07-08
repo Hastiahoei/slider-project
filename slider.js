@@ -1,6 +1,6 @@
-const prev = document.querySelector('#left');
-const next = document.querySelector('#right');
-const slides = document.querySelectorAll('.slide');
+const prev = document.querySelector("#left");
+const next = document.querySelector("#right");
+const slides = document.querySelectorAll(".slide");
 let auto = true;
 let interval = 3000;
 let initSlide;
